@@ -74,7 +74,7 @@ async function runCheck() {
         // 3. 個数も確認
         console.log("要素の総数:", await allBoxes.count());
         const slots = page.locator('.flatpickr-day:not(.prevMonthDay):not(.nextMonthDay) span.reservation-event-box')
-                  .filter({ hasText: '×' });
+                  .filter({ hasText: '○' });
 
         // 見つかった数をカウント
         const count = await slots.count();
